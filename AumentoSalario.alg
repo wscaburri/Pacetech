@@ -1,11 +1,14 @@
-algoritmo "Aumento de Sal·rio"
+algoritmo "Aumento de Sal√°rio"
 
 var
 salario, aumento, novoSalario: real
+
 inicio
-escreval("Digite seu sal·rio")
+escreval("Digite seu sal√°rio")
 leia(salario)
+
 novoSalario <- salario * 1.3
 aumento <- novoSalario - salario
-escreval("Seu aumento foi de R$", aumento, " e seu sal·rio agora È R$", novoSalario)
+
+escreval("Seu aumento foi de R$", aumento, " e seu sal√°rio agora √© R$", novoSalario)
 fimalgoritmo
