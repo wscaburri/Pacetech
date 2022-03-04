@@ -1,4 +1,4 @@
-algoritmo "semnome"
+algoritmo "Conversor - Moeda e Temperatura"
 
 var
 valorReal, valorDolar, cotacaoDolar, tempCelsius, tempFahrenheit : real
@@ -10,9 +10,9 @@ Escreval("Bem vindo(a)!")
 Escreval()
 
 enquanto opcaoMenu <> "5" faca
-   Escreval("Selecione a opção desejada:")
-   Escreval("1 - Converter Moeda: Real para Dólar")
-   Escreval("2 - Converter Moeda: Dólar para Real")
+   Escreval("Selecione a opÃ§Ã£o desejada:")
+   Escreval("1 - Converter Moeda: Real para DÃ³lar")
+   Escreval("2 - Converter Moeda: DÃ³lar para Real")
    Escreval("3 - Converter Temperatura: Celsius para Fahrenheit")
    Escreval("4 - Converter Temperatura: Fahrenheit para Celsius")
    Escreval("5 - Sair")
@@ -22,7 +22,7 @@ enquanto opcaoMenu <> "5" faca
 
    escolha opcaoMenu
    caso "1"
-      Escreval("Por favor, digite a cotação atual do dólar:")
+      Escreval("Por favor, digite a cotaÃ§Ã£o atual do dÃ³lar:")
       leia(cotacaoDolar)
 
       Escreval("Digite o valor em Reais:")
@@ -30,19 +30,19 @@ enquanto opcaoMenu <> "5" faca
 
       valorDolar <- valorReal / cotacaoDolar
 
-      Escreval("O valor em Dólares é de: $", valorDolar:2:2)
+      Escreval("O valor em DÃ³lares Ã© de: $", valorDolar:2:2)
       Escreval()
 
    caso "2"
-      Escreval("Por favor, digite a cotação atual do dólar:")
+      Escreval("Por favor, digite a cotaÃ§Ã£o atual do dÃ³lar:")
       leia(cotacaoDolar)
 
-      Escreval("Digite o valor em Dólares:")
+      Escreval("Digite o valor em DÃ³lares:")
       leia(valorDolar)
 
       valorReal <- valorDolar * cotacaoDolar
 
-      Escreval("O valor em Reais é de: R$", valorReal:2:2)
+      Escreval("O valor em Reais Ã© de: R$", valorReal:2:2)
       Escreval()
 
    caso "3"
@@ -51,7 +51,7 @@ enquanto opcaoMenu <> "5" faca
 
       tempFahrenheit <- (tempCelsius * 9/5) + 32
 
-      Escreval("A Temperatura em graus Fahrenheit é de:", tempFahrenheit:2:2,"°")
+      Escreval("A Temperatura em graus Fahrenheit Ã© de:", tempFahrenheit:2:2,"Â°")
       Escreval()
 
    caso "4"
@@ -60,14 +60,14 @@ enquanto opcaoMenu <> "5" faca
 
       tempCelsius <- (tempFahrenheit - 32) * 5/9
 
-      Escreval("A Temperatura é graus Celsius é de:", tempCelsius:2:2,"°")
+      Escreval("A Temperatura Ã© graus Celsius Ã© de:", tempCelsius:2:2,"Â°")
       Escreval()
 
    caso "5"
-      Escreval("Operação Finalizada")
+      Escreval("OperaÃ§Ã£o Finalizada")
 
    outrocaso
-      Escreval("Código Inválido. Tente novamente.")
+      Escreval("CÃ³digo InvÃ¡lido. Tente novamente.")
       Escreval()
    fimescolha
 fimenquanto
